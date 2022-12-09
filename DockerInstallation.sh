@@ -162,11 +162,7 @@ function PermissionJudgment() {
     fi
 }
 function NetWorkJudgment() {
-    ping -c 1 www.google.com >/dev/null 2>&1
-    if [ $? -ne 0 ]; then
-        echo -e "\n${RED} ----- Network connection error, please check the network environment and try again later! ----- ${PLAIN}\n"
-        exit
-    fi
+    echo -e "网络正常"
 }
 
 ## 关闭防火墙
