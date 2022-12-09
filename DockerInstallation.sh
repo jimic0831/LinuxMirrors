@@ -162,7 +162,7 @@ function PermissionJudgment() {
     fi
 }
 function NetWorkJudgment() {
-    ping -c 1 www.baidu.com >/dev/null 2>&1
+    ping -c 1 www.google.com >/dev/null 2>&1
     if [ $? -ne 0 ]; then
         echo -e "\n${RED} ----- Network connection error, please check the network environment and try again later! ----- ${PLAIN}\n"
         exit
